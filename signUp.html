@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Daraz Clone</title>
+  </head>
+  <body>
+     <button class="message-btn"><i class="fa fa-comments" aria-hidden="true"></i> Messages</i></button>
+    <!-- header part -->
+    <header class="sticky-head">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="">SAVE MORE ON APP</a></li>
+          <li><a href="">DARAZ AFFILIATE PROGRAM</a></li>
+          <li><a href="">SELL ON DARAZ</a></li>
+          <li><a href="">CUSTOMER CARE</a></li>
+          <li><a href="">TRACK MY ORDER</a></li>
+          <li><a href="loginPage.html">LOGIN</a></li>
+          <li><a href="signUp.html">SIGN UP</a></li>
+          <li><a href="">زبان تبدیل کریں</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-header d-flex ">
+        <div class="logo-part ">
+          <a href="index.html"> <img src="./assessts/logo.png" class="logo-img" alt="logo image" /></a>
+        </div>
+        <div class="search-container ">
+          <form action="#">
+            <input type="text" placeholder="Search in daraz" name="search" />
+            <button type="submit">
+              <i class="fa fa-search search-icon"></i>
+            </button>
+          </form>
+        </div>
+        <div class="cart-icon ">
+           <a href="#"> <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="30"
+            fill="currentColor"
+            class="bi bi-cart"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+            />
+          </svg> </a>
+        </div>
+        <div class="side-logo">
+          <a href="#"> <img src="./assessts/side-logo.png" alt="side-logo image" /></a>
+        </div>
+      </div>
+
+      
+      <div class=" dropdown-category">
+        <a href="#"> <strong>Categories </strong><i class="fa fa-caret-down arrowicon" aria-hidden="true"></i> </a>
+      
+    <div class="category-block  ">
+        <ul class="categories dropdown-data">
+          <li class="categories-list"><a href="#">Groceries & Pets</a></li>
+          <li class="categories-list"><a href="#">Health & Beauty</a></li>
+          <li class="categories-list"><a href="#">Men's Fashion</a></li>
+          <li class="categories-list"><a href="#">Womens's Fashion</a></li>
+          <li class="categories-list"><a href="#">Babies & Toys</a></li>
+          <li class="categories-list"><a href="#">Home & Lifestyle</a></li>
+          <li class="categories-list"><a href="#">Electonic Device</a></li>
+          <li class="categories-list">
+            <a href="#">Electronic Accessories</a>
+          </li>
+          <li class="categories-list"><a href="#">TV & Home Appliances</a></li>
+          <li class="categories-list"><a href="#">Sports & Outdoor</a></li>
+          <li class="categories-list">
+            <a href="#">Watches, Bags & Jewellery</a>
+          </li>
+          <li class="categories-list"><a href="#">Atumotive & Motorbike</a></li>
+        </ul>
+      </div>
+    </div>
+    </header>
+
+    <div class=" row section-body router-page d-flex justify-content-around pb-5 ">
+        <div class="col-lg-8">
+        <div class=" d-flex justify-content-between mt-5 mb-4 form-heading">
+            <h2 class="fs-4">Create your Daraz Account</h2>
+            <p> Already member <a href="#" class="form-links">Login</a> here.</p>
+        </div>
+        <form class="loginform pt-3">
+            <div class="row d-flex justify-content-evenly my-3">
+                <div class="col-md-6">
+            <div class="input-field mb-4">
+            <label for="email" class="mb-2">Phone Number*</label>
+            <input type="text" name="email" placeholder="Please enter your Phone number">
+            </div>
+
+            <div>
+            <input type="range" min="1" max="100" value="0"  class="slider my-4" id="myRange">
+            <p class="sms-code">Slide to get SMS Code</p>
+          </div>
+
+            <div class="input-field mt-3">
+                <label for="password" class="mb-2">Password*</label> <br>
+                <input type="password" name="password" placeholder="Minimum 6 characters with number and character">
+                </div>
+                <div class="d-flex input-field my-4"> 
+                    <div>
+                    <label for="birthday" class="mb-2">Birthday</label>
+                    <div class="d-flex rounded-1">
+                    <select class="form-select form-select-sm mb-3 " aria-label=".form-select-lg example">
+                        <option selected disabled hidden>Month</option>
+                        <option >Jan</option>
+                        <option >Feb</option>
+                        <option >March</option>
+                        <option >April</option>
+                        <option> May</option>
+                        <option >June</option>
+                        <option >July</option>
+                        <option >Aug</option>
+                        <option >Sep</option>
+                        <option >Oct</option>
+                        <option >Nov</option>
+                        <option >Dec</option>
+                      </select>
+                      <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                        <option selected disabled hidden>Day</option>
+                        <option >1</option>
+                        <option >2</option>
+                        <option >3</option>
+                        <option >4</option>
+                        <option> 5</option>
+                        <option >6</option>
+                        <option >7</option>
+                        <option >8</option>
+                        <option >9</option>
+                        <option >10</option>
+                        <option >11</option>
+                        <option >12</option>
+                        <option >13</option>
+                        <option >14</option>
+                        <option>15</option>
+                        <option >16</option>
+                        <option> 17</option>
+                        <option >18</option>
+                        <option >19</option>
+                        <option >20</option>
+                        <option >21</option>
+                        <option >22</option>
+                        <option >23</option>
+                        <option >24</option>
+                        <option>25</option>
+                        <option >26</option>
+                        <option> 27</option>
+                        <option >28</option>
+                        <option >29</option>
+                        <option >30</option>
+                        <option >31</option>
+                      </select>
+                      <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                        <option selected disabled hidden>Year</option>
+                        <option >2022</option>
+                        <option >2021</option>
+                        <option >2020</option>
+                        <option >2019</option>
+                        <option> 2018</option>
+                        <option >2017</option>
+                        <option >2016</option>
+                        <option >2015</option>
+                        <option >2014</option>
+                        <option >2013</option>
+                        <option >2012</option>
+                        <option >2011</option>
+                        <option >2010</option>
+                        <option >2009</option>
+                        <option >2008</option>
+                        <option >2007</option>
+                        <option> 2006</option>
+                        <option >2005</option>
+                        <option >2004</option>
+                        <option >2003</option>
+                        <option >2002</option>
+                        <option >2001</option>
+                        <option >2000</option>
+                        <option >1999</option>
+                        <option >1998</option>
+                        <option >1997</option>
+                        <option >1996</option>
+                        <option >1995</option>
+                        <option >1994</option>
+                      </select>
+                    </div>
+                    </div>
+                    <div class="ms-2">
+                        <label for="gender" class="mb-2">Gender</label>
+                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                          <option selected disabled hidden>Gender</option>
+                          <option >Male</option>
+                          <option >Female</option>
+                          <option >Other</option>
+                          </select>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 form-btn-area">
+                <div class="input-field ">
+                    <label for="email" class="mb-2">Full Name*</label>
+                    <input type="text" name="email" placeholder="Enter your first and last name">
+                    </div>
+                    <div class="d-flex checkbox" >
+                        <input type="checkbox">
+                        <p class=" ms-2">I'd like to receive exclusive offers and promotions via SMS</p>
+                    </div>
+                <button class="btn login-btn w-100 p-3 rounded-0 " >Sign Up</button>
+                <p class=" ms-2">By clicking “SIGN UP”, I agree to Daraz's <a href="#" style="font-size: 0.8rem;">Terms of Use</a> and 
+                   <a href="#"  style="font-size: 0.8rem;"> Privacy Policy </a> </p>
+
+                   <p class="ms-1">Or, sign up with</p>
+
+                   <button  class="btn signup-btn btn-outline-warning w-100 p-3 rounded-0 ">Sign Up with Email</button>
+                   <div class="d-flex signup-btn-group mt-3 pb-4">
+                    <button class="btn facebook-btn rounded-1 w-100 mb-2 p-2 me-2 fs-5"><i class="fa fa-facebook me-2" aria-hidden="true"></i>  Facebook</button>
+                <button class="btn google-btn rounded-1 w-100 mb-2 p-2 me-2 fs-5"><i class="fa fa-google-plus me-2" aria-hidden="true"></i> Google</button>
+
+                   </div>
+
+            </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <div class="row footer-link-section pb-0">
+          <div class="col-md-3 ms-2 mt-2">
+            <h3 class="footer-subheading">Customer Care</h3>
+            <ul class="footer-list">
+              <li><a href="#"> Help Center </a></li>
+              <li><a href="#"> How to buy </a></li>
+              <li><a href="#"> Own your Store </a></li>
+              <li><a href="#"> Returns & refunds </a></li>
+              <li><a href="#"> Contact us </a></li>
+              <li><a href="#"> help Center </a></li>
+              <li><a href="#"> How to buy </a></li>
+              <li><a href="#"> Own your Store </a></li>
+              <li><a href="#"> Returns & refunds </a></li>
+              <li><a href="#"> Contact us </a></li>
+            </ul>
+  
+            <h3 class="footer-subheading">Make Money With Us</h3>
+            <ul class="footer-list">
+              <li><a href="#"> Sell on Daraz </a></li>
+              <li><a href="#"> Affiliate program of Daraz </a></li>
+              <li><a href="#"> Sell your Product </a></li>
+            </ul>
+          </div>
+  
+          <div class="col-md-3 mt-5 ms-2">
+            <h3 class="footer-subheading">Daraz</h3>
+            <ul class="footer-list">
+              <li><a href="#"> About Us </a></li>
+              <li><a href="#"> Contact us </a></li>
+              <li><a href="#"> Digital payment </a></li>
+              <li><a href="#"> Daraz Blogs </a></li>
+              <li><a href="#"> Payments </a></li>
+              <li><a href="#"> Privacy terms </a></li>
+              <li><a href="#"> NTN Number: 1221-1222-11 </a></li>
+              <li><a href="#"> Online Shopping App </a></li>
+              <li><a href="#"> Returns & refunds </a></li>
+              <li><a href="#"> Contact us </a></li>
+              <li><a href="#"> Daraz Blogs </a></li>
+              <li><a href="#"> Payments </a></li>
+            </ul>
+          </div>
+  
+          <div class="col-md-5">
+            <div class="d-flex mt-4">
+              <img
+                src="./assessts/qrcode.png"
+                class="qrcode-img"
+                alt="QRcode of App"
+              />
+              <div class="ms-3 mt-4">
+                <img
+                  src="./assessts/footer-img.png"
+                  class="footer-logo-img"
+                  alt="footer logo img"
+                />
+                <p class="card-text mb-0 footer-side-text">Happing Shopping</p>
+                <p class="card-text">Download App</p>
+              </div>
+            </div>
+            <div class="mt-5 d-flex mb-3 applestore-imgs">
+              <a href="#"
+                ><img
+                  src="./assessts/applestore .jpg"
+                  class="apple-link-img mb-2"
+                  alt="link to apple store"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assessts/applestore2.jpg"
+                  class="apple-link-img mb-2"
+                  alt="link to apple store"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assessts/appgallery.png"
+                  class="apple-link-img mb-2"
+                  alt="link to apple store"
+              /></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row mx-5">
+          <div class="col-md-3 mt-5 mb-3 ps-4">
+            <h3 class="fs-4 mb-3">Payment Methods</h3>
+            <div class="d-flex flex-wrap">
+              <img
+                src="./assessts/payment-methods/1.jpg"
+                class="payment-method-img"
+                alt="payment method"
+              />
+              <img
+                src="./assessts/payment-methods/2.jpg"
+                class="payment-method-img"
+                alt="payment method"
+              />
+              <img
+                src="./assessts/payment-methods/3.jpg"
+                class="payment-method-img"
+                alt="payment method"
+              />
+              <img
+                src="./assessts/payment-methods/4.jpg"
+                class="payment-method-img"
+                alt="payment method"
+              />
+              <img
+                src="./assessts/payment-methods/5.jpg"
+                class="payment-method-img"
+                alt="payment method"
+              />
+              <img
+                src="./assessts/payment-methods/6.jpg"
+                class="payment-method-img"
+                alt="payment method"
+              />
+            </div>
+            <div>
+              <h3 class="mt-4 fs-5">&copy; Daraz 2022</h3>
+            </div>
+          </div>
+          <div class="col-md-3 my-5 ps-4">
+            <h3 class="fs-4 mb-3">Daraz International</h3>
+            <div class="d-flex flex-wrap">
+              <a href="">
+                <img
+                  src="./assessts/countries/pak.png"
+                  class="country-flag"
+                  alt="country flag"
+              /></a>
+              <a href="">
+                <img
+                  src="./assessts/countries/nepal.png"
+                  class="country-flag"
+                  alt="country flag"
+              /></a>
+              <a href="">
+                <img
+                  src="./assessts/countries/filipino.jpg"
+                  class="country-flag"
+                  alt="country flag"
+              /></a>
+              <a href="">
+                <img
+                  src="./assessts/countries/sirilanka.png"
+                  class="country-flag"
+                  alt="country flag"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-3 my-5 ps-4">
+            <h3 class="fs-4 mb-3">Follow Us</h3>
+            <div class="d-flex flex-wrap">
+              <a
+                href="#"
+                class="fa fa-facebook social-icon border border-3 border-primary text-primary rounded-circle"
+              ></a>
+              <a
+                href="#"
+                class="fa fa-twitter social-icon border border-3 border-warning text-warning rounded-circle"
+              ></a>
+              <a
+                href="#"
+                class="fa fa-google social-icon border border-3 border-info text-info rounded-circle"
+              ></a>
+              <a
+                href="#"
+                class="fa fa-linkedin social-icon border border-3 border-success text-success rounded-circle"
+              ></a>
+              <a
+                href="#"
+                class="fa fa-youtube social-icon border border-3 border-danger text-danger rounded-circle"
+              ></a>
+            </div>
+          </div>
+  
+          <div class="col-md-3 my-5 ps-4">
+            <h3 class="fs-4 mb-1">Verified by</h3>
+            <img
+              src="./assessts/dss-img.png"
+              class="qrcode-img"
+              alt="dss-image"
+            />
+          </div>
+        </div>
+        <div class="footer-description py-4">
+        <div class="row mx-5 footer-description-text">
+          <div class="col-md-3">
+            <h3 class="fs-5">How Daraz Transformed Online Shopping in Pakistan</h3>
+            <p>
+              Daraz first made waves in Pakistan's e-commerce market after its
+              introduction in 2012. We have since grown to become Pakistan's
+              largest platform for online shopping with a network spread across
+              Asia in Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np.
+              Our vision was to provide a safe, efficient online marketplace
+              platform for vendors and customers across the country to come
+              together. We started off exclusively as an online fashion retail
+              platform and over the years expanded to become a complete one-stop
+              solution for all your buying needs. Daraz prides itself on not being
+              just another ecommerce venture in Asia. We work tirelessly to make
+              sure that we provide users with the best online online shopping
+              experience and value for their purchases. Whether you shop online
+              through our website or our online shopping mobile App, you can
+              expect easy navigation, customized recommendations, and a smooth
+              online shopping experience guaranteed.
+            </p>
+  
+            <h4 class="fs-5">What Makes Us Different from Other Online Shopping Platforms</h4>
+            <p>
+              <strong>
+                Select from the Largest Online Marketplace in Pakistan</strong
+              >
+              <br />
+              With over 15 million products to select from, Daraz offers its
+              customers the most comprehensive listing of products in the country.
+              Whether you're looking for electronics, apparel, appliances, or
+              groceries - there is something for everyone.
+            </p>
+  
+            <p>
+              <strong> Hassle Free Delivery</strong> <br />
+              Online shopping is only as good as its execution and Daraz promises
+              hassle free delivery right from the moment you order to when your
+              package is dropped at your door. We cater to both major and smaller
+              cities alike, and give you the choice to track your package as it
+              makes its way to you so you always know your order status. If you
+              are unsatisfied with any aspect of your order, we have a simple
+              7-day return or exchange policy.
+            </p>
+            <p>
+              <strong> Payment Options to Suit Every Style</strong> <br>
+              You can choose to pay through a credit/debit card, opt for cash on
+              delivery or even go for EMI (easy monthly instalments). You can also
+              avail exclusive offers by downloading Daraz Wallet - a closed loop
+              digital wallet that offers you a secure, easy way to make payments.
+              We also have easypaisa & jazzcash payment method for our customers'
+              ease.
+            </p>
+            <p> <strong> Shop from Verified Vendors</strong> <br>
+              Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+          </div>
+  
+          <div class="col-md-3">
+            <p> <strong> Shop from Verified Vendors</strong> <br>
+              Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+  
+              <p> <strong> Shop from Verified Vendors</strong> <br>
+                Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+  
+                <p> <strong> Shop from Verified Vendors</strong> <br>
+                  Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+  
+                  <p> <strong> Shop from Verified Vendors</strong> <br>
+                    Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+  
+                    <p> <strong> Shop from Verified Vendors</strong> <br>
+                      Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+  
+                      <p> <strong> Shop from Verified Vendors</strong> <br>
+                        Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+          </div>
+          <div class="col-md-3 footer-links">
+            <h3 class="fs-5">Top Categories & Brands</h3>
+            <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">LED TV</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">LAPTOP & SCREENS</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">COSMETICS</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+              <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+                </p>
+                <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+              <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+                </p>
+          </div>
+          <div class="col-md-3 footer-links">
+            <a href="#" class="footer-sub-heading" style="color: black;">COSMETICS</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+              <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+                </p>
+                <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+              <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+                </p>
+                <a href="#" class="footer-sub-heading" style="color: black;">LED TV</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">LAPTOP & SCREENS</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">COSMETICS</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+              <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+                </p>
+          </div>
+        </div>
+      </div>
+      </footer>
+
+  </body>
+  </html>
+    
+

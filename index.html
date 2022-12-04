@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Daraz Clone</title>
+  </head>
+  <body>
+     <button class="message-btn"><i class="fa fa-comments" aria-hidden="true"></i> Messages</i></button>
+    <!-- header part -->
+    <header class="mb-3">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="">SAVE MORE ON APP</a></li>
+          <li><a href="">DARAZ AFFILIATE PROGRAM</a></li>
+          <li><a href="">SELL ON DARAZ</a></li>
+          <li><a href="">CUSTOMER CARE</a></li>
+          <li><a href="">TRACK MY ORDER</a></li>
+          <li><a href="loginPage.html">LOGIN</a></li>
+          <li><a href="signUp.html">SIGN UP</a></li>
+          <li><a href="">زبان تبدیل کریں</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-header d-flex ">
+        <div class="logo-part ">
+          <a href="index.html"> <img src="./assessts/logo.png" class="logo-img" alt="logo image" /></a>
+        </div>
+        <div class="search-container ">
+          <form action="#">
+            <input type="text" placeholder="Search in daraz" name="search" />
+            <button type="submit">
+              <i class="fa fa-search search-icon"></i>
+            </button>
+          </form>
+        </div>
+        <div class="cart-icon ">
+           <a href="#"> <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="30"
+            fill="currentColor"
+            class="bi bi-cart"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+            />
+          </svg> </a>
+        </div>
+        <div class="side-logo">
+          <a href="#"> <img src="./assessts/side-logo.png" alt="side-logo image" /></a>
+        </div>
+      </div>
+
+      <div class=" dropdown-category dropdown-mainpage">
+        <a href="#"> <strong>Categories </strong><i class="fa fa-caret-down arrowicon" aria-hidden="true"></i> </a>
+      
+    <div class="category-block">
+        <ul class="categories dropdown-data">
+          <li class="categories-list"><a href="#">Groceries & Pets</a></li>
+          <li class="categories-list"><a href="#">Health & Beauty</a></li>
+          <li class="categories-list"><a href="#">Men's Fashion</a></li>
+          <li class="categories-list"><a href="#">Womens's Fashion</a></li>
+          <li class="categories-list"><a href="#">Babies & Toys</a></li>
+          <li class="categories-list"><a href="#">Home & Lifestyle</a></li>
+          <li class="categories-list"><a href="#">Electonic Device</a></li>
+          <li class="categories-list">
+            <a href="#">Electronic Accessories</a>
+          </li>
+          <li class="categories-list"><a href="#">TV & Home Appliances</a></li>
+          <li class="categories-list"><a href="#">Sports & Outdoor</a></li>
+          <li class="categories-list">
+            <a href="#">Watches, Bags & Jewellery</a>
+          </li>
+          <li class="categories-list"><a href="#">Atumotive & Motorbike</a></li>
+        </ul>
+      </div>
+    </div>
+
+    </header>
+
+    <!-- slider part -->
+    <div class="row d-flex justify-content-evenly slider-section-1">
+      <div class="category-block category-block-mainpage col-2">
+        <ul class="categories">
+          <li class="categories-list"><a href="#">Groceries & Pets</a></li>
+          <li class="categories-list"><a href="#">Health & Beauty</a></li>
+          <li class="categories-list"><a href="#">Men's Fashion</a></li>
+          <li class="categories-list"><a href="#">Womens's Fashion</a></li>
+          <li class="categories-list"><a href="#">Babies & Toys</a></li>
+          <li class="categories-list"><a href="#">Home & Lifestyle</a></li>
+          <li class="categories-list"><a href="#">Electonic Device</a></li>
+          <li class="categories-list">
+            <a href="#">Electronic Accessories</a>
+          </li>
+          <li class="categories-list"><a href="#">TV & Home Appliances</a></li>
+          <li class="categories-list"><a href="#">Sports & Outdoor</a></li>
+          <li class="categories-list">
+            <a href="#">Watches, Bags & Jewellery</a>
+          </li>
+          <li class="categories-list"><a href="#">Atumotive & Motorbike</a></li>
+        </ul>
+      </div>
+
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide w-75 col-lg-8 p-0 "
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./assessts/carousel/carousel1.jpg" class="d-block w-100" "
+            alt="Slider images">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel2.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel3.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel4.jpg"
+              class="d-block w-100"
+              alt="Slider images"
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel5.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel6.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel7.jpg"
+              class="d-block w-100"
+              alt="Slider images"
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel8.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./assessts/carousel/carousel9.jpg"
+              class="d-block w-100"
+              alt="slider image"
+            />
+          </div>
+
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="3"
+              aria-current="true"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="6"
+              aria-current="true"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-body">
+      <!-- Surf Excel Ad -->
+      <div class="d-flex justify-content-center">
+        <img
+          src="./assessts/surf-ad.PNG"
+          class="surf-ad"
+          alt="surf-excel-ad image"
+        />
+      </div>
+      <!-- Category icons block -->
+      <div class="d-flex flex-wrap justify-content-center mt-3">
+        <div class="d-flex  category-icon">
+          <img
+            src="./assessts/mart.png"
+            class="categories-img"
+            alt="mart image"
+          />
+          <h3 class="category-text">Mart</h3>
+        </div>
+        <div class="d-flex category-icon">
+          <img
+            src="./assessts/women-fashion.png"
+            class="categories-img"
+            alt="mart image"
+          />
+          <h3 class="category-text">Women's Fashion</h3>
+        </div>
+        <div class="d-flex category-icon">
+          <img
+            src="./assessts/beauty.png"
+            class="categories-img"
+            alt="mart image"
+          />
+          <h3 class="category-text">Beauty</h3>
+        </div>
+        <div class="d-flex category-icon">
+          <img
+            src="./assessts/home&living.png"
+            class="categories-img"
+            alt="mart image"
+          />
+          <h3 class="category-text">Home & Living</h3>
+        </div>
+        <div class="d-flex category-icon">
+          <img
+            src="./assessts/11-11.png"
+            class="categories-img"
+            alt="mart image"
+          />
+          <h3 class="category-text">11.11</h3>
+        </div>
+      </div>
+
+      <!-- Flash Sale -->
+      <div class="display-section">
+        <h2 class="fs-4 mt-4 mb-2">Flash Sale</h2>
+        <div class="cards-area">
+          <div class="d-flex pt-4 pb-2 px-4 flash-section-head">
+            <p>On Sale Now</p>
+            <div class="sale-ending d-flex">
+              <p style="color: black">Ending in</p>
+              <p class="time-block">08</p>
+              :
+              <p class="time-block">30</p>
+              :
+              <p class="time-block">50</p>
+            </div>
+            <div>
+            <button class="shop-now-btn">Shop More</button>
+            </div>
+          </div>
+
+          <div class="flash-sale-body d-flex flex-wrap justify-content-between card-flex">
+            <div class="card" style="width: 190px">
+              <img
+                src="assessts/card-images/1.jpg"
+                class="card-img-top"
+                alt="card image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Marshmallow Hoodies for Men Hoodie marsgmal kls...
+                </p>
+                <h3>Rs.990</h3>
+                <p>
+                  <span class="lighter-text"> Rs.1200</span>
+                  <span class="discount">-37% </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 190px">
+              <img
+                src="assessts/card-images/2.jpg"
+                class="card-img-top"
+                alt="card image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Marshmallow Hoodies for Men Hoodie marsgmal kls...
+                </p>
+                <h3>Rs.990</h3>
+                <p>
+                  <span class="lighter-text"> Rs.1200</span>
+                  <span class="discount">-37% </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 190px">
+              <img
+                src="assessts/card-images/3.jpg"
+                class="card-img-top"
+                alt="card image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Marshmallow Hoodies for Men Hoodie marsgmal kls...
+                </p>
+                <h3>Rs.990</h3>
+                <p>
+                  <span class="lighter-text"> Rs.1200</span>
+                  <span class="discount">-37% </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 190px">
+              <img
+                src="assessts/card-images/4.jpg"
+                class="card-img-top"
+                alt="card image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Marshmallow Hoodies for Men Hoodie marsgmal kls...
+                </p>
+                <h3>Rs.990</h3>
+                <p>
+                  <span class="lighter-text"> Rs.1200</span>
+                  <span class="discount">-37% </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 190px">
+              <img
+                src="assessts/card-images/5.jpg"
+                class="card-img-top"
+                alt="card image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Marshmallow Hoodies for Men Hoodie marsgmal kls...
+                </p>
+                <h3>Rs.990</h3>
+                <p>
+                  <span class="lighter-text"> Rs.1200</span>
+                  <span class="discount">-37% </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 190px">
+              <img
+                src="assessts/card-images/6.png"
+                class="card-img-top"
+                alt="card image"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Marshmallow Hoodies for Men Hoodie marsgmal kls...
+                </p>
+                <h3>Rs.990</h3>
+                <p>
+                  <span class="lighter-text"> Rs.1200</span>
+                  <span class="discount">-37% </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daraz Mall section  -->
+      <div class="display-section">
+        <div class="d-flex justify-content-between mt-5">
+          <h2 class="fs-4 ">Daraz Mall</h2>
+          <button class="border-0 shop-more">
+            Shop More <i class="fa fa-angle-right"></i>
+          </button>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between card-flex">
+          <div class="card rounded-0" style="width: 190px">
+            <div class="img-box-shadow">
+              <img
+                src="assessts/darazMall/a1.jpg"
+                class="card-img-top rounded-0 darazmall-mainimg"
+                alt="card image"
+              />
+            </div>
+            <div class="darazmall-img-box">
+              <img
+                src="assessts/darazMall/a2.jpeg"
+                class="darazmall-img"
+                alt="card-images"
+              />
+            </div>
+            <div class="card-body pb-0 mt-4 text-center">
+              <p class="card-text discount mb-0">Shan</p>
+              <p><span class="text-decoration-none lighter-text">Shan</span></p>
+            </div>
+          </div>
+
+          <div class="card rounded-0" style="width: 190px">
+            <div class="img-box-shadow">
+              <img
+                src="assessts/darazMall/b1.jpg"
+                class="card-img-top rounded-0 darazmall-mainimg"
+                alt="card image"
+              />
+            </div>
+            <div class="darazmall-img-box">
+              <img
+                src="assessts/darazMall/b2.png"
+                class="darazmall-img"
+                alt="card-images"
+              />
+            </div>
+            <div class="card-body pb-0 mt-4 text-center">
+              <p class="card-text discount mb-0">Safeguard</p>
+              <p>
+                <span class="text-decoration-none lighter-text">Safeguard</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card rounded-0" style="width: 190px">
+            <div class="img-box-shadow">
+              <img
+                src="assessts/darazMall/c1.jpg"
+                class="card-img-top rounded-0 darazmall-mainimg"
+                alt="card image"
+              />
+            </div>
+            <div class="darazmall-img-box">
+              <img
+                src="assessts/darazMall/c2.jpeg"
+                class="darazmall-img"
+                alt="card-images"
+              />
+            </div>
+            <div class="card-body pb-0 mt-4 text-center">
+              <p class="card-text discount mb-0">Five star</p>
+              <p>
+                <span class="text-decoration-none lighter-text">Five Star</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card rounded-0" style="width: 190px">
+            <div class="img-box-shadow">
+              <img
+                src="assessts/darazMall/d1.jpg"
+                class="card-img-top rounded-0 darazmall-mainimg"
+                alt="card image"
+              />
+            </div>
+            <div class="darazmall-img-box">
+              <img
+                src="assessts/darazMall/d2.jpeg"
+                class="darazmall-img"
+                alt="card-images"
+              />
+            </div>
+            <div class="card-body pb-0 mt-4 text-center">
+              <p class="card-text discount mb-0">Everyday</p>
+              <p>
+                <span class="text-decoration-none lighter-text">Everyday</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card rounded-0" style="width: 190px">
+            <div class="img-box-shadow">
+              <img
+                src="assessts/darazMall/e1.jpg"
+                class="card-img-top rounded-0 darazmall-mainimg"
+                alt="card image"
+              />
+            </div>
+            <div class="darazmall-img-box">
+              <img
+                src="assessts/darazMall/e2.png"
+                class="darazmall-img"
+                alt="card-images"
+              />
+            </div>
+            <div class="card-body pb-0 mt-4 text-center">
+              <p class="card-text discount mb-0">Lactogrow</p>
+              <p>
+                <span class="text-decoration-none lighter-text">Lactogrow</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card rounded-0" style="width: 190px">
+            <div class="img-box-shadow">
+              <img
+                src="assessts/darazMall/f1.jpg"
+                class="card-img-top rounded-0 darazmall-mainimg"
+                alt="card image"
+              />
+            </div>
+            <div class="darazmall-img-box">
+              <img
+                src="assessts/darazMall/f2.jpeg"
+                class="darazmall-img"
+                alt="card-images"
+              />
+            </div>
+            <div class="card-body pb-0 mt-4 text-center">
+              <p class="card-text discount mb-0">Head & Shoulders</p>
+              <p>
+                <span class="text-decoration-none lighter-text"
+                  >Head & Shoulders</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Section -->
+      <div class="display-section">
+        <h2 class="fs-4 mt-5 ">Categories</h2>
+        <div class="d-flex flex-wrap">
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/1.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/2.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/3.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/4.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/5.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/6.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/7.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/8.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/9.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/10.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/11.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/12.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/13.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/14.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/15.png"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+
+          <div class="card rounded-0 category-card" style="width: 145px">
+            <img
+              src="assessts/categories/16.jpg"
+              class="card-img-top rounded-0 category-mainimg"
+              alt="card image"
+            />
+            <div class="card-body py-0 text-center">
+              <p class="card-text discount mb-0">Growing-up Milk (3yrs +)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="display-section">
+        <h2 class="fs-4 mt-5 ">Just For you</h2>
+        <div class="d-flex flex-wrap justify-content-between card-flex">
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/1.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/2.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/3.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/4.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/5.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/6.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/7.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/8.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/24.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/9.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/10.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/11.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/12.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/13.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/14.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/15.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/16.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/17.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/18.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/19.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/20.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/21.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/22.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+
+          <div class="card border-0 rounded-0 my-2" style="width: 190px">
+            <img
+              src="./assessts/justForYou/23.webp"
+              class="card-img-top"
+              alt="recommended items images"
+            />
+            <div class="card-body">
+              <p class="card-text mb-1">
+                Pack Of 5-Pieces – New Latest Cushion Coverss
+              </p>
+              <h3 class="mb-1">Rs.990</h3>
+              <p class="mb-1">
+                <span class="lighter-text"> Rs.1200</span>
+                <span class="discount">-37% </span>
+              </p>
+              <span class="golden"
+                ><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+              <span class="lighter-text" style="text-decoration: none"
+                >(120)</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button class="btn-loadmore"><strong> LOAD MORE </strong></button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row  footer-link-section pb-0">
+        <div class="col-md-3 ms-2 mt-2">
+          <h3 class="footer-subheading">Customer Care</h3>
+          <ul class="footer-list">
+            <li><a href="#"> Help Center </a></li>
+            <li><a href="#"> How to buy </a></li>
+            <li><a href="#"> Own your Store </a></li>
+            <li><a href="#"> Returns & refunds </a></li>
+            <li><a href="#"> Contact us </a></li>
+            <li><a href="#"> help Center </a></li>
+            <li><a href="#"> How to buy </a></li>
+            <li><a href="#"> Own your Store </a></li>
+            <li><a href="#"> Returns & refunds </a></li>
+            <li><a href="#"> Contact us </a></li>
+          </ul>
+
+          <h3 class="footer-subheading">Make Money With Us</h3>
+          <ul class="footer-list">
+            <li><a href="#"> Sell on Daraz </a></li>
+            <li><a href="#"> Affiliate program of Daraz </a></li>
+            <li><a href="#"> Sell your Product </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mt-5 ms-2">
+          <h3 class="footer-subheading">Daraz</h3>
+          <ul class="footer-list">
+            <li><a href="#"> About Us </a></li>
+            <li><a href="#"> Contact us </a></li>
+            <li><a href="#"> Digital payment </a></li>
+            <li><a href="#"> Daraz Blogs </a></li>
+            <li><a href="#"> Payments </a></li>
+            <li><a href="#"> Privacy terms </a></li>
+            <li><a href="#"> NTN Number: 1221-1222-11 </a></li>
+            <li><a href="#"> Online Shopping App </a></li>
+            <li><a href="#"> Returns & refunds </a></li>
+            <li><a href="#"> Contact us </a></li>
+            <li><a href="#"> Daraz Blogs </a></li>
+            <li><a href="#"> Payments </a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5">
+          <div class="d-flex mt-4">
+            <img
+              src="./assessts/qrcode.png"
+              class="qrcode-img"
+              alt="QRcode of App"
+            />
+            <div class="ms-3 mt-4">
+              <img
+                src="./assessts/footer-img.png"
+                class="footer-logo-img"
+                alt="footer logo img"
+              />
+              <p class="card-text mb-0 footer-side-text">Happing Shopping</p>
+              <p class="card-text">Download App</p>
+            </div>
+          </div>
+          <div class="mt-5 d-flex mb-3 applestore-imgs">
+            <a href="#"
+              ><img
+                src="./assessts/applestore .jpg"
+                class="apple-link-img mb-2"
+                alt="link to apple store"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assessts/applestore2.jpg"
+                class="apple-link-img mb-2"
+                alt="link to apple store"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assessts/appgallery.png"
+                class="apple-link-img mb-2"
+                alt="link to apple store"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-5">
+        <div class="col-md-3 mt-5 mb-3 ps-4">
+          <h3 class="fs-4 mb-3">Payment Methods</h3>
+          <div class="d-flex flex-wrap">
+            <img
+              src="./assessts/payment-methods/1.jpg"
+              class="payment-method-img"
+              alt="payment method"
+            />
+            <img
+              src="./assessts/payment-methods/2.jpg"
+              class="payment-method-img"
+              alt="payment method"
+            />
+            <img
+              src="./assessts/payment-methods/3.jpg"
+              class="payment-method-img"
+              alt="payment method"
+            />
+            <img
+              src="./assessts/payment-methods/4.jpg"
+              class="payment-method-img"
+              alt="payment method"
+            />
+            <img
+              src="./assessts/payment-methods/5.jpg"
+              class="payment-method-img"
+              alt="payment method"
+            />
+            <img
+              src="./assessts/payment-methods/6.jpg"
+              class="payment-method-img"
+              alt="payment method"
+            />
+          </div>
+          <div>
+            <h3 class="mt-4 fs-5">&copy; Daraz 2022</h3>
+          </div>
+        </div>
+        <div class="col-md-3 my-5 ps-4">
+          <h3 class="fs-4 mb-3">Daraz International</h3>
+          <div class="d-flex flex-wrap">
+            <a href="">
+              <img
+                src="./assessts/countries/pak.png"
+                class="country-flag"
+                alt="country flag"
+            /></a>
+            <a href="">
+              <img
+                src="./assessts/countries/nepal.png"
+                class="country-flag"
+                alt="country flag"
+            /></a>
+            <a href="">
+              <img
+                src="./assessts/countries/filipino.jpg"
+                class="country-flag"
+                alt="country flag"
+            /></a>
+            <a href="">
+              <img
+                src="./assessts/countries/sirilanka.png"
+                class="country-flag"
+                alt="country flag"
+            /></a>
+          </div>
+        </div>
+        <div class="col-md-3 my-5 ps-4">
+          <h3 class="fs-4 mb-3">Follow Us</h3>
+          <div class="d-flex flex-wrap">
+            <a
+              href="#"
+              class="fa fa-facebook social-icon border border-3 border-primary text-primary rounded-circle"
+            ></a>
+            <a
+              href="#"
+              class="fa fa-twitter social-icon border border-3 border-warning text-warning rounded-circle"
+            ></a>
+            <a
+              href="#"
+              class="fa fa-google social-icon border border-3 border-info text-info rounded-circle"
+            ></a>
+            <a
+              href="#"
+              class="fa fa-linkedin social-icon border border-3 border-success text-success rounded-circle"
+            ></a>
+            <a
+              href="#"
+              class="fa fa-youtube social-icon border border-3 border-danger text-danger rounded-circle"
+            ></a>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-5 ps-4">
+          <h3 class="fs-4 mb-1">Verified by</h3>
+          <img
+            src="./assessts/dss-img.png"
+            class="qrcode-img"
+            alt="dss-image"
+          />
+        </div>
+      </div>
+      <div class="footer-description py-4">
+      <div class="row mx-5 footer-description-text">
+        <div class="col-md-3">
+          <h3 class="fs-5">How Daraz Transformed Online Shopping in Pakistan</h3>
+          <p>
+            Daraz first made waves in Pakistan's e-commerce market after its
+            introduction in 2012. We have since grown to become Pakistan's
+            largest platform for online shopping with a network spread across
+            Asia in Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np.
+            Our vision was to provide a safe, efficient online marketplace
+            platform for vendors and customers across the country to come
+            together. We started off exclusively as an online fashion retail
+            platform and over the years expanded to become a complete one-stop
+            solution for all your buying needs. Daraz prides itself on not being
+            just another ecommerce venture in Asia. We work tirelessly to make
+            sure that we provide users with the best online online shopping
+            experience and value for their purchases. Whether you shop online
+            through our website or our online shopping mobile App, you can
+            expect easy navigation, customized recommendations, and a smooth
+            online shopping experience guaranteed.
+          </p>
+
+          <h4 class="fs-5">What Makes Us Different from Other Online Shopping Platforms</h4>
+          <p>
+            <strong>
+              Select from the Largest Online Marketplace in Pakistan</strong
+            >
+            <br />
+            With over 15 million products to select from, Daraz offers its
+            customers the most comprehensive listing of products in the country.
+            Whether you're looking for electronics, apparel, appliances, or
+            groceries - there is something for everyone.
+          </p>
+
+          <p>
+            <strong> Hassle Free Delivery</strong> <br />
+            Online shopping is only as good as its execution and Daraz promises
+            hassle free delivery right from the moment you order to when your
+            package is dropped at your door. We cater to both major and smaller
+            cities alike, and give you the choice to track your package as it
+            makes its way to you so you always know your order status. If you
+            are unsatisfied with any aspect of your order, we have a simple
+            7-day return or exchange policy.
+          </p>
+          <p>
+            <strong> Payment Options to Suit Every Style</strong> <br>
+            You can choose to pay through a credit/debit card, opt for cash on
+            delivery or even go for EMI (easy monthly instalments). You can also
+            avail exclusive offers by downloading Daraz Wallet - a closed loop
+            digital wallet that offers you a secure, easy way to make payments.
+            We also have easypaisa & jazzcash payment method for our customers'
+            ease.
+          </p>
+          <p> <strong> Shop from Verified Vendors</strong> <br>
+            Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+        </div>
+
+        <div class="col-md-3">
+          <p> <strong> Shop from Verified Vendors</strong> <br>
+            Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+
+            <p> <strong> Shop from Verified Vendors</strong> <br>
+              Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+
+              <p> <strong> Shop from Verified Vendors</strong> <br>
+                Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+
+                <p> <strong> Shop from Verified Vendors</strong> <br>
+                  Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+
+                  <p> <strong> Shop from Verified Vendors</strong> <br>
+                    Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+
+                    <p> <strong> Shop from Verified Vendors</strong> <br>
+                      Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!</p>
+        </div>
+        <div class="col-md-3 footer-links">
+          <h3 class="fs-5">Top Categories & Brands</h3>
+          <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">LED TV</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">LAPTOP & SCREENS</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">COSMETICS</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+        </div>
+        <div class="col-md-3 footer-links">
+          <a href="#" class="footer-sub-heading" style="color: black;">COSMETICS</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+              <a href="#" class="footer-sub-heading" style="color: black;">LED TV</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">LAPTOP & SCREENS</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">FURNITURE</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">COSMETICS</a>
+          <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+            </p>
+            <a href="#" class="footer-sub-heading" style="color: black;">MOBILE PHONE IN PAKISTAN</a>
+            <p> <a href="#">Apple iphone</a>,<a href="#">Nokia</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">telenore</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>,<a href="#">Apple iphone</a>
+              </p>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
